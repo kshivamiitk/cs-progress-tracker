@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+}
+
+a {
+  @apply text-primary-300 hover:text-primary-200 transition-colors;
+}
+
+.glass-card {
+  @apply bg-white/10 dark:bg-slate-900/60 backdrop-blur-lg border border-white/10 rounded-3xl shadow-glass;
+}
+
+.neo-brutal {
+  box-shadow: 8px 8px 0px rgba(34, 211, 238, 0.4);
+}
+
+.react-calendar {
+  @apply w-full bg-white/10 dark:bg-slate-900/40 text-inherit border border-white/10 rounded-3xl p-4;
+}
+
+.react-calendar__tile {
+  @apply rounded-xl transition text-sm;
+}
+
+.react-calendar__tile--now {
+  @apply bg-primary-500/40 text-primary-100;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  @apply bg-primary-500/30 text-primary-100;
+}
+
+.color-empty {
+  fill: rgba(148, 163, 184, 0.2);
+}
+
+.color-github-1 {
+  fill: rgba(34, 211, 238, 0.25);
+}
+
+.color-github-2 {
+  fill: rgba(34, 211, 238, 0.45);
+}
+
+.color-github-3 {
+  fill: rgba(34, 211, 238, 0.65);
+}
+
+.color-github-4 {
+  fill: rgba(34, 211, 238, 0.85);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+[data-theme='light'] body {
+  @apply bg-slate-100 text-slate-900;
+}
